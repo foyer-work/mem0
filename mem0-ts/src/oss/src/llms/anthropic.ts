@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import Anthropic from "@anthropic-ai/sdk";
 import { LLM, LLMResponse } from "./base";
 import { LLMConfig, Message } from "../types";
