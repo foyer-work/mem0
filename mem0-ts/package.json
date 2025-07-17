@@ -1,5 +1,5 @@
 {
-  "name": "mem0ai",
+  "name": "foyer-mem0ai",
   "version": "2.1.36",
   "description": "The Memory Layer For Your AI Apps",
   "main": "./dist/index.js",
