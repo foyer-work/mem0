@@ -243,7 +243,7 @@ export default class MemoryClient {
     this._captureEvent("add", [payloadKeys]);
 
     const response = await this._fetchWithErrorHandling(
-      `${this.host}/v1/memories/`,
+      `${this.host}/memories/`,
       {
         method: "POST",
         headers: this.headers,
@@ -352,8 +352,7 @@ export default class MemoryClient {
       if (payload.org_name) delete payload.org_name;
       if (payload.project_name) delete payload.project_name;
     }
-    const endpoint =
-      api_version === "v2" ? "/v2/memories/search/" : "/v1/memories/search/";
+    const endpoint = api_version === "v2" ? "/search/" : "/v1/memories/search/";
     const response = await this._fetchWithErrorHandling(
       `${this.host}${endpoint}`,
       {
